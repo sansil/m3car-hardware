@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -112,13 +112,21 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -13480,34 +13488,72 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="U1" library="SparkFun-Sensors" deviceset="QRE1113" device="SMD-W"/>
+<part name="U1" library="SparkFun-Sensors" deviceset="QRE1113" device="SMD-W">
+<attribute name="LINK" value="https://uy.mouser.com/ProductDetail/ON-Semiconductor-Fairchild/QRE1113GR?qs=sGAEpiMZZMt82OzCyDsLFF3rmybX%252BxhMzW1DivtsctQ%3D"/>
+<attribute name="MPN" value="QRE1113GR"/>
+</part>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="U2" library="SparkFun-IC-Special-Function" deviceset="DRV883X" device="" value="DRV8835"/>
-<part name="U$1" library="SOT95P285X120-5N" deviceset="TLV703" device=""/>
+<part name="U2" library="SparkFun-IC-Special-Function" deviceset="DRV883X" device="" value="DRV8835">
+<attribute name="LINK" value="https://uy.mouser.com/ProductDetail/Texas-Instruments/DRV8835DSSR?qs=sGAEpiMZZMsLzCkzIJTB61U4TTU%252BM%252BAY"/>
+<attribute name="MPN" value="DRV8835DSSR"/>
+</part>
+<part name="U$1" library="SOT95P285X120-5N" deviceset="TLV703" device="">
+<attribute name="LINK" value="https://uy.mouser.com/ProductDetail/Texas-Instruments/TLV7031DBVR?qs=sGAEpiMZZMutXGli8Ay4kO1LHQwdKe7AZqBYpoPj%2FWg%3D"/>
+<attribute name="MPN" value="TLV7031DBVR"/>
+</part>
 <part name="U$2" library="holyiot" deviceset="HOLYIOT" device=""/>
-<part name="U$3" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="10uf"/>
-<part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:6240564/1" value="100k"/>
-<part name="U$4" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="0.01uf"/>
+<part name="U$3" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="10uf">
+<attribute name="MPN" value="GRM155R60J106ME44D"/>
+</part>
+<part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:6240564/1" value="100k">
+<attribute name="MPN" value="RC0402JR-07100KL"/>
+</part>
+<part name="U$4" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="0.01uf">
+<attribute name="MPN" value="CL05C100JB5NNNC"/>
+</part>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIPLED_0603">
 <attribute name="PARTN" value="150060GS75000"/>
 </part>
-<part name="U5" library="Adafruit Feather 32u4 RFMxx" deviceset="MICROBUILDER_MCP73831/2" device=""/>
+<part name="U5" library="Adafruit Feather 32u4 RFMxx" deviceset="MICROBUILDER_MCP73831/2" device="">
+<attribute name="LINK" value="https://uy.mouser.com/ProductDetail/Microchip-Technology/MCP73831T-2ACI-OT?qs=sGAEpiMZZMtLck3p7ZBovc%252BIEf4wKPGR"/>
+<attribute name="MPN" value="
+MCP73831T-2ACI/OT"/>
+</part>
 <part name="C10" library="adafruit" deviceset="C-US" device="C0402" value="10uf">
 <attribute name="PARTN" value="GRM155R60G106ME44D"/>
 </part>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="R0402" value="220"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="R0402" value="180">
+<attribute name="LINK" value="https://www.seeedstudio.com/opl.html"/>
+<attribute name="MPN" value="RC0402FR-07180RL"/>
+</part>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R5" library="adafruit" deviceset="R-US_" device="R0402" value="2k"/>
-<part name="R2" library="adafruit" deviceset="R-US_" device="R0402" value="22"/>
-<part name="R3" library="adafruit" deviceset="R-US_" device="R0402" value="22"/>
-<part name="R6" library="adafruit" deviceset="R-US_" device="R0402" value="10k"/>
-<part name="R7" library="adafruit" deviceset="R-US_" device="R0402" value="200"/>
+<part name="R5" library="adafruit" deviceset="R-US_" device="R0402" value="2k">
+<attribute name="MPN" value="RC0402FR-072KL"/>
+</part>
+<part name="R2" library="adafruit" deviceset="R-US_" device="R0402" value="22">
+<attribute name="LINK" value="https://www.seeedstudio.com/opl.html"/>
+<attribute name="MPN" value="BLM15BB220SN1D"/>
+</part>
+<part name="R3" library="adafruit" deviceset="R-US_" device="R0402" value="22">
+<attribute name="LINK" value="https://www.seeedstudio.com/opl.html"/>
+<attribute name="MPN" value="BLM15BB220SN1D"/>
+</part>
+<part name="R6" library="adafruit" deviceset="R-US_" device="R0402" value="10k">
+<attribute name="LINK" value="https://www.seeedstudio.com/opl.html"/>
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
+<part name="R7" library="adafruit" deviceset="R-US_" device="R0402" value="200">
+<attribute name="MPN" value="0402WGF2000TCE"/>
+</part>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
-<part name="X2" library="Adafruit Feather 32u4 RFMxx" deviceset="MICROBUILDER_USB" device="_MICRO_20329_V2"/>
+<part name="X2" library="Adafruit Feather 32u4 RFMxx" deviceset="MICROBUILDER_USB" device="_MICRO_20329_V2">
+<attribute name="LINK" value="https://www.digikey.com/product-detail/en/amphenol-icc-fci/10103592-0001LF/609-4048-1-ND/2350355"/>
+<attribute name="MPN" value="10103592-0001LF	"/>
+</part>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TC2" library="TagConnect" deviceset="TC2050-IDC" device="-NL"/>
 <part name="Q1" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="BSS84" device="" package3d_urn="urn:adsk.eagle:package:29752/1">
@@ -13538,28 +13584,50 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="P+8" library="SparkFun" deviceset="VCC" device=""/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="D3" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
-<part name="R8" library="adafruit" deviceset="R-US_" device="R0402" value="180"/>
-<part name="R9" library="adafruit" deviceset="R-US_" device="R0402" value="180"/>
+<part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE">
+<attribute name="MPN" value="150060YS75000"/>
+</part>
+<part name="D3" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED">
+<attribute name="MPN" value="150060YS75000"/>
+</part>
+<part name="R8" library="adafruit" deviceset="R-US_" device="R0402" value="180">
+<attribute name="LINK" value="https://www.seeedstudio.com/opl.html"/>
+<attribute name="MPN" value="RC0402FR-07180RL"/>
+</part>
+<part name="R9" library="adafruit" deviceset="R-US_" device="R0402" value="180">
+<attribute name="LINK" value="https://www.seeedstudio.com/opl.html"/>
+<attribute name="MPN" value="RC0402FR-07180RL"/>
+</part>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U$5" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="0.01uf"/>
+<part name="U$5" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="0.01uf">
+<attribute name="MPN" value="CL05C100JB5NNNC"/>
+</part>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="JP1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:6240711/1"/>
-<part name="U$6" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="1uf"/>
-<part name="U$7" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="1uf"/>
+<part name="U$6" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="1uf">
+<attribute name="MPN" value="CL05A105KP5NNNC"/>
+</part>
+<part name="U$7" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="1uf">
+<attribute name="MPN" value="CL05A105KP5NNNC"/>
+</part>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="R13" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:6240564/1" value="100k"/>
+<part name="R13" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:6240564/1" value="100k">
+<attribute name="MPN" value="RC0402JR-07100KL"/>
+</part>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="JP2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:6240711/1"/>
-<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="1A/23V/620mV"/>
-<part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="1A/23V/620mV"/>
+<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="1A/23V/620mV">
+<attribute name="MPN" value="BAT20JFILM"/>
+</part>
+<part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="1A/23V/620mV">
+<attribute name="MPN" value="BAT20JFILM"/>
+</part>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 </parts>
 <sheets>
@@ -13571,6 +13639,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U1" gate="&gt;NAME" x="73.66" y="129.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="78.994" y="134.62" size="1.778" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="65.786" y="134.62" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
+<attribute name="MPN" x="73.66" y="129.54" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="LINK" x="73.66" y="129.54" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="172.72" y="0" smashed="yes">
@@ -13581,22 +13651,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U2" gate="G$1" x="63.5" y="91.44" smashed="yes">
 <attribute name="VALUE" x="50.8" y="78.486" size="1.778" layer="96" font="vector" align="top-left"/>
 <attribute name="NAME" x="51.054" y="104.394" size="1.778" layer="95" font="vector"/>
+<attribute name="MPN" x="63.5" y="91.44" size="1.778" layer="96" display="off"/>
+<attribute name="LINK" x="63.5" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$1" gate="G$1" x="50.8" y="193.04" smashed="yes">
 <attribute name="NAME" x="48.26" y="200.66" size="1.778" layer="94"/>
+<attribute name="LINK" x="50.8" y="193.04" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="50.8" y="193.04" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$2" gate="G$1" x="193.04" y="127" smashed="yes"/>
 <instance part="U$3" gate="C$1" x="12.7" y="96.52" smashed="yes">
 <attribute name="NAME" x="14.224" y="96.901" size="1.778" layer="95"/>
 <attribute name="VALUE" x="14.224" y="91.821" size="1.778" layer="96"/>
+<attribute name="MPN" x="12.7" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R1" gate="G$1" x="93.98" y="167.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="92.4814" y="163.83" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="97.282" y="163.83" size="1.778" layer="96" rot="R90"/>
+<attribute name="MPN" x="93.98" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="U$4" gate="C$1" x="22.86" y="96.52" smashed="yes">
 <attribute name="NAME" x="24.384" y="96.901" size="1.778" layer="95"/>
 <attribute name="VALUE" x="24.384" y="91.821" size="1.778" layer="96"/>
+<attribute name="MPN" x="22.86" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND1" gate="1" x="43.18" y="73.66" smashed="yes">
 <attribute name="VALUE" x="40.64" y="71.12" size="1.778" layer="96"/>
@@ -13615,6 +13692,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U5" gate="G$1" x="76.2" y="55.88" smashed="yes">
 <attribute name="NAME" x="66.04" y="67.31" size="1.27" layer="95"/>
 <attribute name="VALUE" x="66.04" y="43.18" size="1.27" layer="95"/>
+<attribute name="MPN" x="76.2" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="LINK" x="76.2" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C10" gate="G$1" x="33.02" y="53.34" smashed="yes">
 <attribute name="PARTN" x="33.02" y="53.34" size="1.778" layer="96" display="off"/>
@@ -13627,6 +13706,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R4" gate="G$1" x="55.88" y="53.34" smashed="yes" rot="R180">
 <attribute name="NAME" x="59.69" y="51.8414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="59.69" y="56.642" size="1.778" layer="96" rot="R180"/>
+<attribute name="MPN" x="55.88" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="LINK" x="55.88" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND12" gate="1" x="104.14" y="43.18" smashed="yes">
 <attribute name="VALUE" x="104.14" y="42.926" size="1.778" layer="96" align="top-center"/>
@@ -13634,22 +13715,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R5" gate="G$1" x="96.52" y="55.88" smashed="yes" rot="R180">
 <attribute name="NAME" x="100.33" y="54.3814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="100.33" y="59.182" size="1.778" layer="96" rot="R180"/>
+<attribute name="MPN" x="96.52" y="55.88" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="48.26" y="160.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="52.07" y="158.5214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="52.07" y="163.322" size="1.778" layer="96" rot="R180"/>
+<attribute name="MPN" x="48.26" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="LINK" x="48.26" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R3" gate="G$1" x="48.26" y="152.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="52.07" y="150.9014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="52.07" y="155.702" size="1.778" layer="96" rot="R180"/>
+<attribute name="MPN" x="48.26" y="152.4" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="LINK" x="48.26" y="152.4" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R6" gate="G$1" x="83.82" y="119.38" smashed="yes">
 <attribute name="NAME" x="80.01" y="120.8786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.01" y="116.078" size="1.778" layer="96"/>
+<attribute name="LINK" x="83.82" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="83.82" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R7" gate="G$1" x="60.96" y="119.38" smashed="yes" rot="R180">
 <attribute name="NAME" x="64.77" y="117.8814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="64.77" y="122.682" size="1.778" layer="96" rot="R180"/>
+<attribute name="MPN" x="60.96" y="119.38" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="J2" gate="G$1" x="101.6" y="81.28" smashed="yes" rot="R180">
 <attribute name="VALUE" x="104.14" y="86.106" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -13658,6 +13747,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="X2" gate="G$1" x="20.32" y="157.48" smashed="yes">
 <attribute name="NAME" x="10.16" y="166.116" size="1.27" layer="95"/>
 <attribute name="VALUE" x="10.16" y="147.32" size="1.27" layer="96"/>
+<attribute name="MPN" x="20.32" y="157.48" size="1.778" layer="96" display="off"/>
+<attribute name="LINK" x="20.32" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND3" gate="1" x="35.56" y="147.32" smashed="yes">
 <attribute name="VALUE" x="35.56" y="147.066" size="1.778" layer="96" align="top-center"/>
@@ -13714,18 +13805,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="D1" gate="G$1" x="246.38" y="55.88" smashed="yes">
 <attribute name="NAME" x="242.951" y="51.308" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="248.285" y="51.308" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<attribute name="MPN" x="246.38" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D3" gate="G$1" x="256.54" y="55.88" smashed="yes">
 <attribute name="NAME" x="253.111" y="51.308" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="258.445" y="51.308" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<attribute name="MPN" x="256.54" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R8" gate="G$1" x="246.38" y="66.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="247.8786" y="69.85" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="243.078" y="69.85" size="1.778" layer="96" rot="R270"/>
+<attribute name="LINK" x="246.38" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="246.38" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R9" gate="G$1" x="256.54" y="66.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="258.0386" y="69.85" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="154.178" y="120.65" size="1.778" layer="96" rot="R270"/>
+<attribute name="LINK" x="256.54" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="256.54" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND4" gate="1" x="256.54" y="40.64" smashed="yes">
 <attribute name="VALUE" x="256.54" y="40.386" size="1.778" layer="96" align="top-center"/>
@@ -13733,6 +13830,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$5" gate="C$1" x="139.7" y="180.34" smashed="yes">
 <attribute name="NAME" x="141.224" y="180.721" size="1.778" layer="95"/>
 <attribute name="VALUE" x="141.224" y="175.641" size="1.778" layer="96"/>
+<attribute name="MPN" x="139.7" y="180.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND5" gate="1" x="139.7" y="167.64" smashed="yes">
 <attribute name="VALUE" x="137.16" y="165.1" size="1.778" layer="96"/>
@@ -13746,9 +13844,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="U$6" gate="C$1" x="25.4" y="190.5" smashed="yes">
 <attribute name="VALUE" x="26.924" y="185.801" size="1.778" layer="96"/>
+<attribute name="MPN" x="25.4" y="190.5" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$7" gate="C$1" x="76.2" y="190.5" smashed="yes">
 <attribute name="VALUE" x="77.724" y="185.801" size="1.778" layer="96"/>
+<attribute name="MPN" x="76.2" y="190.5" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="76.2" y="177.8" smashed="yes">
 <attribute name="VALUE" x="73.66" y="175.26" size="1.778" layer="96"/>
@@ -13771,6 +13871,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R13" gate="G$1" x="93.98" y="154.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="92.4814" y="151.13" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="97.282" y="151.13" size="1.778" layer="96" rot="R90"/>
+<attribute name="MPN" x="93.98" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND8" gate="1" x="93.98" y="144.78" smashed="yes">
 <attribute name="VALUE" x="93.98" y="144.526" size="1.778" layer="96" align="top-center"/>
@@ -13782,10 +13883,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="D4" gate="G$1" x="60.96" y="17.78" smashed="yes">
 <attribute name="NAME" x="58.42" y="19.812" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="60.96" y="16.002" size="1.778" layer="96" font="vector" align="top-center"/>
+<attribute name="MPN" x="60.96" y="17.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D5" gate="G$1" x="60.96" y="27.94" smashed="yes">
 <attribute name="NAME" x="58.42" y="29.972" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="60.96" y="26.162" size="1.778" layer="96" font="vector" align="top-center"/>
+<attribute name="MPN" x="60.96" y="27.94" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J1" gate="G$1" x="144.78" y="45.72" smashed="yes" rot="R180">
 <attribute name="VALUE" x="147.32" y="50.546" size="1.778" layer="96" font="vector" rot="R180"/>
