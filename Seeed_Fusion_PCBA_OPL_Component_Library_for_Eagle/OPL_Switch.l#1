@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="21" fill="1" visible="no" active="yes"/>
@@ -288,7 +288,7 @@
 <text x="-2.54" y="-0.635" size="0.889" layer="27" ratio="11">&gt;VALUE</text>
 <rectangle x1="-3.048" y1="-3.048" x2="3.048" y2="3.048" layer="39"/>
 </package>
-<package name="SW4-SMD-7.0X3.5X3.5MM-90D" urn="urn:adsk.eagle:footprint:8005075/1" locally_modified="yes">
+<package name="SW4-SMD-7.0X3.5X3.5MM-90D" urn="urn:adsk.eagle:footprint:8005075/1">
 <wire x1="-3" y1="1.5" x2="3" y2="1.5" width="0.127" layer="51"/>
 <wire x1="3" y1="1.5" x2="3" y2="0.75" width="0.127" layer="21"/>
 <wire x1="3" y1="0.75" x2="3.5" y2="0.25" width="0.127" layer="21"/>
@@ -313,8 +313,8 @@
 <wire x1="-3.5" y1="0.2" x2="-3.5" y2="0.1" width="0.127" layer="21"/>
 <smd name="1" x="-2.159" y="1.651" dx="1.778" dy="1.397" layer="1" rot="R90"/>
 <smd name="2" x="2.159" y="1.651" dx="1.778" dy="1.397" layer="1" rot="R90"/>
-<smd name="S1" x="-3.556" y="-0.508" dx="1.778" dy="1.016" layer="1"/>
-<smd name="S2" x="3.556" y="-0.508" dx="1.778" dy="1.016" layer="1"/>
+<smd name="S1" x="-3.556" y="-0.508" dx="1.778" dy="1.016" layer="1" thermals="no"/>
+<smd name="S2" x="3.556" y="-0.508" dx="1.778" dy="1.016" layer="1" thermals="no"/>
 <hole x="-1.15" y="0" drill="0.95"/>
 <hole x="1.15" y="0" drill="0.95"/>
 <text x="-1.905" y="2.54" size="0.889" layer="25" ratio="11">&gt;NAME</text>

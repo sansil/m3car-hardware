@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12218,7 +12218,7 @@ http://www.tag-connect.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-LED">
+<library name="SparkFun-LED" urn="urn:adsk.eagle:library:529">
 <description>&lt;h3&gt;SparkFun LEDs&lt;/h3&gt;
 This library contains discrete LEDs for illumination or indication, but no displays.
 &lt;br&gt;
@@ -12233,7 +12233,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="LED-0603">
+<package name="LED-0603" urn="urn:adsk.eagle:footprint:39307/1" library_version="1">
 <description>&lt;B&gt;LED 0603 SMT&lt;/B&gt;&lt;p&gt;
 0603, surface mount.
 &lt;p&gt;Specifications:
@@ -12253,7 +12253,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.15875" y1="0" x2="-0.15875" y2="0.3175" width="0.127" layer="51"/>
 <wire x1="0.15875" y1="0" x2="-0.15875" y2="-0.3175" width="0.127" layer="51"/>
 </package>
-<package name="LED-1206">
+<package name="LED-1206" urn="urn:adsk.eagle:footprint:39304/1" library_version="1">
 <description>&lt;h3&gt;LED 1206 SMT&lt;/h3&gt;
 
 1206, surface mount. 
@@ -12266,27 +12266,49 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;&lt;/ul&gt;</description>
 <wire x1="2.4" y1="0.6825" x2="2.4" y2="-0.6825" width="0.2032" layer="21"/>
+<wire x1="0.65375" y1="0.6825" x2="0.65375" y2="-0.6825" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="0" x2="0.15875" y2="0.47625" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="0" x2="0.15875" y2="-0.47625" width="0.2032" layer="51"/>
 <smd name="A" x="-1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
 <smd name="C" x="1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
 <text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.9525" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="0.65375" y1="0.6825" x2="0.65375" y2="-0.6825" width="0.2032" layer="51"/>
-<wire x1="0.635" y1="0" x2="0.15875" y2="0.47625" width="0.2032" layer="51"/>
-<wire x1="0.635" y1="0" x2="0.15875" y2="-0.47625" width="0.2032" layer="51"/>
-</package>
-<package name="LED-1206-HIDDENSILK">
-<wire x1="0.6474" y1="0.6825" x2="0.6474" y2="-0.6825" width="0.2032" layer="21"/>
-<smd name="A" x="-1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
-<smd name="C" x="1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
-<text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.9525" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="0.65375" y1="0.6825" x2="0.65375" y2="-0.6825" width="0.2032" layer="51"/>
-<wire x1="0.635" y1="0" x2="0.15875" y2="0.47625" width="0.2032" layer="51"/>
-<wire x1="0.635" y1="0" x2="0.15875" y2="-0.47625" width="0.2032" layer="51"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="LED-0603" urn="urn:adsk.eagle:package:39354/1" type="box" library_version="1">
+<description>LED 0603 SMT
+0603, surface mount.
+Specifications:
+Pin count: 2
+Pin pitch:0.075inch 
+Area: 0.06" x 0.03"
+
+Example device(s):
+LED - BLUE</description>
+<packageinstances>
+<packageinstance name="LED-0603"/>
+</packageinstances>
+</package3d>
+<package3d name="LED-1206" urn="urn:adsk.eagle:package:39352/1" type="box" library_version="1">
+<description>LED 1206 SMT
+
+1206, surface mount. 
+
+Specifications:
+Pin count: 2
+Pin pitch: 
+Area: 0.125" x 0.06"
+
+Example device(s):
+LED</description>
+<packageinstances>
+<packageinstance name="LED-1206"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="LED">
+<symbol name="LED" urn="urn:adsk.eagle:symbol:39303/1" library_version="1">
 <description>&lt;h3&gt;LED&lt;/h3&gt;
 &lt;p&gt;&lt;/p&gt;</description>
 <wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
@@ -12313,7 +12335,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED-BLUE" prefix="D" uservalue="yes">
+<deviceset name="LED-BLUE" urn="urn:adsk.eagle:component:39388/1" prefix="D" uservalue="yes" library_version="1">
 <description>&lt;h3&gt;Blue SMD LED&lt;/h3&gt;
 &lt;p&gt;Used in manufacturing of various products at SparkFun&lt;/p&gt;
 
@@ -12336,6 +12358,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39354/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-08575"/>
@@ -12348,6 +12373,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39352/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09911"/>
@@ -12355,20 +12383,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technology>
 </technologies>
 </device>
-<device name="_HIDDENSILK" package="LED-1206-HIDDENSILK">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-09911" constant="no"/>
-</technology>
-</technologies>
-</device>
 </devices>
 </deviceset>
-<deviceset name="LED-RED" prefix="D" uservalue="yes">
+<deviceset name="LED-RED" urn="urn:adsk.eagle:component:39386/1" prefix="D" uservalue="yes" library_version="1">
 <description>&lt;h3&gt;Red SMD LED&lt;/h3&gt;
 &lt;p&gt;Used in manufacturing of most products at SparkFun&lt;/p&gt;
 
@@ -12392,6 +12409,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39354/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-00819"/>
@@ -12404,6 +12424,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39352/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09912"/>
@@ -12416,21 +12439,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39354/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-11154" constant="no"/>
 <attribute name="VALUE" value="Red" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_HIDDENSILK" package="LED-1206-HIDDENSILK">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-09912" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -13021,6 +13036,103 @@ TS-003</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="OPL_Switch">
+<description>&lt;b&gt;Seeed Open Parts Library (OPL) for the Seeed Fusion PCB Assembly Service
+&lt;br&gt;&lt;br&gt;
+&lt;a href="https://www.seeedstudio.com/opl.html" title="https://www.seeedstudio.com/opl.html"&gt;Seeed Fusion PCBA OPL&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://www.seeedstudio.com/fusion_pcb.html"&gt;Order PCB/PCBA&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;a href="https://www.seeedstudio.com"&gt;www.seeedstudio.com&lt;/a&gt;
+&lt;br&gt;&lt;/b&gt;</description>
+<packages>
+<package name="SW4-SMD-7.0X3.5X3.5MM-90D" urn="urn:adsk.eagle:footprint:8005075/1" locally_modified="yes">
+<wire x1="-3" y1="1.5" x2="3" y2="1.5" width="0.127" layer="51"/>
+<wire x1="3" y1="1.5" x2="3" y2="0.75" width="0.127" layer="21"/>
+<wire x1="3" y1="0.75" x2="3.5" y2="0.25" width="0.127" layer="21"/>
+<wire x1="3.5" y1="0.25" x2="3.5" y2="-1" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-1" x2="-3.5" y2="0.25" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="0.25" x2="-3" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-3" y1="0.75" x2="-3" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="-0.75" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-1.25" x2="-0.75" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-1.75" x2="-0.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-2" x2="0.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-2" x2="0.75" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-1.75" x2="0.75" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-1.25" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="1.5" x2="1.3" y2="1.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="0.2" x2="3.5" y2="0.1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="-2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="0.2" x2="-3.5" y2="0.1" width="0.127" layer="21"/>
+<smd name="1" x="-2.159" y="1.651" dx="1.778" dy="1.397" layer="1" rot="R90"/>
+<smd name="2" x="2.159" y="1.651" dx="1.778" dy="1.397" layer="1" rot="R90"/>
+<smd name="S1" x="-3.556" y="-0.508" dx="1.778" dy="1.016" layer="1"/>
+<smd name="S2" x="3.556" y="-0.508" dx="1.778" dy="1.016" layer="1"/>
+<hole x="-1.15" y="0" drill="0.95"/>
+<hole x="1.15" y="0" drill="0.95"/>
+<text x="-1.905" y="2.54" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="SW4-SMD-7.0X3.5X3.5MM-90D" urn="urn:adsk.eagle:package:8005121/1" type="box">
+<packageinstances>
+<packageinstance name="SW4-SMD-7.0X3.5X3.5MM-90D"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="BUTTON-2+2P" urn="urn:adsk.eagle:symbol:8005090/1">
+<pin name="S1" x="-6.35" y="1.27" visible="pad" length="short"/>
+<pin name="S2" x="6.35" y="1.27" visible="pad" length="short" rot="R180"/>
+<pin name="1" x="-6.35" y="-1.27" visible="pad" length="short"/>
+<pin name="2" x="6.35" y="-1.27" visible="pad" length="short" rot="R180"/>
+<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="-3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="2.54" width="0.1524" layer="94"/>
+<text x="-6.35" y="3.81" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="0" y="3.81" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
+<circle x="1.27" y="0" radius="0.254" width="0" layer="94"/>
+<circle x="1.27" y="-1.27" radius="0.254" width="0" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMD-BUTTON(2+2P-7X3.5MM-90D)" urn="urn:adsk.eagle:component:8005154/1" prefix="K" uservalue="yes">
+<description>311020023</description>
+<gates>
+<gate name="K" symbol="BUTTON-2+2P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SW4-SMD-7.0X3.5X3.5MM-90D">
+<connects>
+<connect gate="K" pin="1" pad="1"/>
+<connect gate="K" pin="2" pad="2"/>
+<connect gate="K" pin="S1" pad="S1"/>
+<connect gate="K" pin="S2" pad="S2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8005121/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="TS-1188E" constant="no"/>
+<attribute name="VALUE" value="TS-1188E" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13058,14 +13170,14 @@ TS-003</description>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIPLED_0603">
-<attribute name="PARTN" value="150060GS75000"/>
+<attribute name="MPN" value="150060GS75000"/>
 </part>
 <part name="BAT_CHAR" library="Adafruit Feather 32u4 RFMxx" deviceset="MICROBUILDER_MCP73831/2" device="">
 <attribute name="LINK" value="https://uy.mouser.com/ProductDetail/Microchip-Technology/MCP73831T-2ACI-OT?qs=sGAEpiMZZMtLck3p7ZBovc%252BIEf4wKPGR"/>
 <attribute name="MPN" value=" MCP73831T-2ACI/OT"/>
 </part>
 <part name="C10" library="adafruit" deviceset="C-US" device="C0402" value="10uf">
-<attribute name="PARTN" value="GRM155R60G106ME44D"/>
+<attribute name="MPN" value="GRM155R60G106ME44D"/>
 </part>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R4" library="adafruit" deviceset="R-US_" device="R0402" value="680">
@@ -13098,10 +13210,10 @@ TS-003</description>
 </part>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TC2" library="TagConnect" deviceset="TC2050-IDC" device="-NL"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE">
+<part name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-BLUE" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="BLUE">
 <attribute name="MPN" value="150060YS75000"/>
 </part>
-<part name="D3" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED">
+<part name="D3" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-RED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="RED">
 <attribute name="MPN" value="150060YS75000"/>
 </part>
 <part name="R8" library="adafruit" deviceset="R-US_" device="R0402" value="180">
@@ -13141,25 +13253,28 @@ TS-003</description>
 <attribute name="MPN" value="RC0402JR-07100KL"/>
 </part>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0402" value="10uf">
-<attribute name="PARTN" value="GRM155R60G106ME44D"/>
+<attribute name="MPN" value="GRM155R60G106ME44D"/>
 </part>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0402" value="0.01uf">
-<attribute name="PARTN" value="CL05C100JB5NNNC"/>
+<attribute name="MPN" value="CL05C100JB5NNNC"/>
 </part>
 <part name="C3" library="adafruit" deviceset="C-US" device="C0402" value="10uf">
-<attribute name="PARTN" value="GRM155R60G106ME44D"/>
+<attribute name="MPN" value="GRM155R60G106ME44D"/>
 </part>
 <part name="C4" library="adafruit" deviceset="C-US" device="C0402" value="0.01uf">
-<attribute name="PARTN" value="CL05C100JB5NNNC"/>
+<attribute name="MPN" value="CL05C100JB5NNNC"/>
 </part>
 <part name="C5" library="adafruit" deviceset="C-US" device="C0402" value="1uf">
-<attribute name="PARTN" value="CL05A105KP5NNNC"/>
+<attribute name="MPN" value="CL05A105KP5NNNC"/>
 </part>
 <part name="C6" library="adafruit" deviceset="C-US" device="C0402" value="1uf">
-<attribute name="PARTN" value="CL05A105KP5NNNC"/>
+<attribute name="MPN" value="CL05A105KP5NNNC"/>
 </part>
+<part name="K1" library="OPL_Switch" deviceset="SMD-BUTTON(2+2P-7X3.5MM-90D)" device="" package3d_urn="urn:adsk.eagle:package:8005121/1" value="TS-1188E"/>
+<part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13207,7 +13322,7 @@ TS-003</description>
 <attribute name="VALUE" x="20.32" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="LED1" gate="G$1" x="43.18" y="53.34" smashed="yes" rot="R90">
-<attribute name="PARTN" x="43.18" y="53.34" size="1.27" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="43.18" y="53.34" size="1.27" layer="96" rot="R90" display="off"/>
 <attribute name="NAME" x="47.752" y="56.896" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="47.752" y="59.055" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -13218,7 +13333,7 @@ TS-003</description>
 <attribute name="LINK" x="76.2" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C10" gate="G$1" x="33.02" y="53.34" smashed="yes">
-<attribute name="PARTN" x="33.02" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="33.02" y="53.34" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="34.036" y="53.975" size="1.778" layer="95"/>
 <attribute name="VALUE" x="34.036" y="49.149" size="1.778" layer="96"/>
 </instance>
@@ -13347,21 +13462,21 @@ TS-003</description>
 <attribute name="VALUE" x="147.32" y="50.546" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="147.32" y="40.132" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="U$8" gate="G$1" x="22.86" y="5.08">
+<instance part="U$8" gate="G$1" x="22.86" y="5.08" smashed="yes">
 <attribute name="VALUE" x="21.336" y="2.54" size="1.27" layer="96"/>
 </instance>
-<instance part="D6" gate="G$1" x="17.78" y="22.86">
+<instance part="D6" gate="G$1" x="17.78" y="22.86" smashed="yes">
+<attribute name="MPN" x="17.78" y="22.86" size="1.27" layer="96" display="off"/>
 <attribute name="NAME" x="17.78" y="25.4" size="1.27" layer="95" align="center"/>
 <attribute name="VALUE" x="17.78" y="20.36" size="1.27" layer="96" align="center"/>
-<attribute name="MPN" x="17.78" y="22.86" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="Q3" gate="G$1" x="22.86" y="30.48" rot="MR180">
-<attribute name="VALUE" x="25.654" y="32.385" size="1.27" layer="96" rot="MR180"/>
-<attribute name="NAME" x="25.654" y="30.099" size="1.27" layer="95" rot="MR180"/>
+<instance part="Q3" gate="G$1" x="22.86" y="30.48" smashed="yes" rot="MR180">
 <attribute name="LINK" x="22.86" y="30.48" size="1.27" layer="96" rot="MR180" display="off"/>
 <attribute name="MPN" x="22.86" y="30.48" size="1.27" layer="96" rot="MR180" display="off"/>
+<attribute name="VALUE" x="25.654" y="32.385" size="1.27" layer="96" rot="MR180"/>
+<attribute name="NAME" x="25.654" y="30.099" size="1.27" layer="95" rot="MR180"/>
 </instance>
-<instance part="U$44" gate="G$1" x="12.7" y="5.08">
+<instance part="U$44" gate="G$1" x="12.7" y="5.08" smashed="yes">
 <attribute name="VALUE" x="11.176" y="2.54" size="1.27" layer="96"/>
 </instance>
 <instance part="R11" gate="G$1" x="12.7" y="15.24" smashed="yes" rot="R90">
@@ -13370,38 +13485,51 @@ TS-003</description>
 <attribute name="MPN" x="12.7" y="15.24" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C1" gate="G$1" x="22.86" y="15.24" smashed="yes">
-<attribute name="PARTN" x="22.86" y="15.24" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="15.24" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="23.876" y="15.875" size="1.778" layer="95"/>
 <attribute name="VALUE" x="23.876" y="11.049" size="1.778" layer="96"/>
 </instance>
 <instance part="GND9" gate="1" x="30.48" y="104.14" smashed="yes">
 <attribute name="VALUE" x="27.94" y="101.6" size="1.778" layer="96"/>
 </instance>
-<instance part="J3" gate="J$1" x="134.62" y="63.5" rot="R180"/>
+<instance part="J3" gate="J$1" x="134.62" y="63.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="137.16" y="70.866" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="137.16" y="57.912" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
 <instance part="C2" gate="G$1" x="22.86" y="93.98" smashed="yes">
-<attribute name="PARTN" x="22.86" y="93.98" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="93.98" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="23.876" y="94.615" size="1.778" layer="95"/>
 <attribute name="VALUE" x="23.876" y="89.789" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="30.48" y="114.3" smashed="yes">
-<attribute name="PARTN" x="30.48" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="30.48" y="114.3" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="31.496" y="114.935" size="1.778" layer="95"/>
 <attribute name="VALUE" x="31.496" y="110.109" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="139.7" y="180.34" smashed="yes">
-<attribute name="PARTN" x="139.7" y="180.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="139.7" y="180.34" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="140.716" y="180.975" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.716" y="176.149" size="1.778" layer="96"/>
 </instance>
 <instance part="C5" gate="G$1" x="25.4" y="190.5" smashed="yes">
-<attribute name="PARTN" x="25.4" y="190.5" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="25.4" y="190.5" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="26.416" y="191.135" size="1.778" layer="95"/>
 <attribute name="VALUE" x="26.416" y="186.309" size="1.778" layer="96"/>
 </instance>
 <instance part="C6" gate="G$1" x="76.2" y="190.5" smashed="yes">
-<attribute name="PARTN" x="76.2" y="190.5" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="76.2" y="190.5" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="77.216" y="191.135" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.216" y="186.309" size="1.778" layer="96"/>
+</instance>
+<instance part="K1" gate="K" x="83.82" y="27.94" smashed="yes">
+<attribute name="NAME" x="77.47" y="31.75" size="1.27" layer="95" ratio="10"/>
+<attribute name="VALUE" x="83.82" y="31.75" size="1.27" layer="96" ratio="10"/>
+</instance>
+<instance part="GND13" gate="1" x="95.25" y="35.56" smashed="yes" rot="R180">
+<attribute name="VALUE" x="95.25" y="35.814" size="1.778" layer="96" rot="R180" align="top-center"/>
+</instance>
+<instance part="GND10" gate="1" x="71.12" y="35.56" smashed="yes" rot="R180">
+<attribute name="VALUE" x="71.12" y="35.814" size="1.778" layer="96" rot="R180" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -13528,6 +13656,18 @@ TS-003</description>
 <pinref part="J3" gate="J$1" pin="1"/>
 <wire x1="127" y1="66.04" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
 <label x="124.46" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="K1" gate="K" pin="S2"/>
+<wire x1="90.17" y1="29.21" x2="95.25" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="29.21" x2="95.25" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="K1" gate="K" pin="S1"/>
+<wire x1="77.47" y1="29.21" x2="71.12" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="29.21" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="2">
@@ -13947,21 +14087,14 @@ TS-003</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="D6" gate="G$1" pin="C"/>
-<wire x1="20.32" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="S"/>
-<wire x1="22.86" y1="25.4" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
-<junction x="22.86" y="22.86"/>
-<wire x1="22.86" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="17.78" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
-<junction x="22.86" y="22.86"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<label x="35.56" y="22.86" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J3" gate="J$1" pin="2"/>
 <wire x1="127" y1="63.5" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
 <label x="124.46" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="K1" gate="K" pin="2"/>
+<wire x1="90.17" y1="26.67" x2="95.25" y2="26.67" width="0.1524" layer="91"/>
+<label x="95.25" y="26.67" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="1">
@@ -14124,6 +14257,24 @@ TS-003</description>
 <pinref part="NRF52" gate="G$1" pin="P0.23"/>
 <wire x1="162.56" y1="124.46" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
 <label x="157.48" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="VPOW" class="0">
+<segment>
+<pinref part="D6" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
+<label x="33.02" y="22.86" size="1.27" layer="95" xref="yes"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="22.86" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="25.4" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
+<junction x="22.86" y="22.86"/>
+<wire x1="22.86" y1="22.86" x2="22.86" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="K1" gate="K" pin="1"/>
+<wire x1="77.47" y1="26.67" x2="71.12" y2="26.67" width="0.1524" layer="91"/>
+<label x="71.12" y="26.67" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
