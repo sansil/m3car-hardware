@@ -13177,7 +13177,7 @@ TS-003</description>
 <attribute name="MPN" value=" MCP73831T-2ACI/OT"/>
 </part>
 <part name="C10" library="adafruit" deviceset="C-US" device="C0402" value="10uf">
-<attribute name="PARTN" value="GRM155R60G106ME44D"/>
+<attribute name="MPN" value="GRM155R60G106ME44D"/>
 </part>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R4" library="adafruit" deviceset="R-US_" device="R0402" value="680">
@@ -13261,7 +13261,7 @@ TS-003</description>
 <attribute name="MPN" value="CL05C100JB5NNNC"/>
 </part>
 <part name="C3" library="adafruit" deviceset="C-US" device="C0402" value="10uf">
-<attribute name="PARTN" value="GRM155R60G106ME44D"/>
+<attribute name="MPN" value="GRM155R60G106ME44D"/>
 </part>
 <part name="C4" library="adafruit" deviceset="C-US" device="C0402" value="0.01uf">
 <attribute name="MPN" value="CL05C100JB5NNNC"/>
@@ -13333,7 +13333,7 @@ TS-003</description>
 <attribute name="LINK" x="76.2" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C10" gate="G$1" x="33.02" y="53.34" smashed="yes">
-<attribute name="PARTN" x="33.02" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="33.02" y="53.34" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="34.036" y="53.975" size="1.778" layer="95"/>
 <attribute name="VALUE" x="34.036" y="49.149" size="1.778" layer="96"/>
 </instance>
@@ -13502,7 +13502,7 @@ TS-003</description>
 <attribute name="VALUE" x="23.876" y="89.789" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="30.48" y="114.3" smashed="yes">
-<attribute name="PARTN" x="30.48" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="30.48" y="114.3" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="31.496" y="114.935" size="1.778" layer="95"/>
 <attribute name="VALUE" x="31.496" y="110.109" size="1.778" layer="96"/>
 </instance>

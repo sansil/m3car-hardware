@@ -13170,7 +13170,7 @@ TS-003</description>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIPLED_0603">
-<attribute name="PARTN" value="150060GS75000"/>
+<attribute name="MPN" value="150060GS75000"/>
 </part>
 <part name="BAT_CHAR" library="Adafruit Feather 32u4 RFMxx" deviceset="MICROBUILDER_MCP73831/2" device="">
 <attribute name="LINK" value="https://uy.mouser.com/ProductDetail/Microchip-Technology/MCP73831T-2ACI-OT?qs=sGAEpiMZZMtLck3p7ZBovc%252BIEf4wKPGR"/>
@@ -13253,24 +13253,24 @@ TS-003</description>
 <attribute name="MPN" value="RC0402JR-07100KL"/>
 </part>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0402" value="10uf">
-<attribute name="PARTN" value="GRM155R60G106ME44D"/>
+<attribute name="MPN" value="GRM155R60G106ME44D"/>
 </part>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0402" value="0.01uf">
-<attribute name="PARTN" value="CL05C100JB5NNNC"/>
+<attribute name="MPN" value="CL05C100JB5NNNC"/>
 </part>
 <part name="C3" library="adafruit" deviceset="C-US" device="C0402" value="10uf">
 <attribute name="PARTN" value="GRM155R60G106ME44D"/>
 </part>
 <part name="C4" library="adafruit" deviceset="C-US" device="C0402" value="0.01uf">
-<attribute name="PARTN" value="CL05C100JB5NNNC"/>
+<attribute name="MPN" value="CL05C100JB5NNNC"/>
 </part>
 <part name="C5" library="adafruit" deviceset="C-US" device="C0402" value="1uf">
-<attribute name="PARTN" value="CL05A105KP5NNNC"/>
+<attribute name="MPN" value="CL05A105KP5NNNC"/>
 </part>
 <part name="C6" library="adafruit" deviceset="C-US" device="C0402" value="1uf">
-<attribute name="PARTN" value="CL05A105KP5NNNC"/>
+<attribute name="MPN" value="CL05A105KP5NNNC"/>
 </part>
 <part name="K1" library="OPL_Switch" deviceset="SMD-BUTTON(2+2P-7X3.5MM-90D)" device="" package3d_urn="urn:adsk.eagle:package:8005121/1" value="TS-1188E"/>
 <part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -13322,7 +13322,7 @@ TS-003</description>
 <attribute name="VALUE" x="20.32" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="LED1" gate="G$1" x="43.18" y="53.34" smashed="yes" rot="R90">
-<attribute name="PARTN" x="43.18" y="53.34" size="1.27" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="43.18" y="53.34" size="1.27" layer="96" rot="R90" display="off"/>
 <attribute name="NAME" x="47.752" y="56.896" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="47.752" y="59.055" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -13485,7 +13485,7 @@ TS-003</description>
 <attribute name="MPN" x="12.7" y="15.24" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C1" gate="G$1" x="22.86" y="15.24" smashed="yes">
-<attribute name="PARTN" x="22.86" y="15.24" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="15.24" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="23.876" y="15.875" size="1.778" layer="95"/>
 <attribute name="VALUE" x="23.876" y="11.049" size="1.778" layer="96"/>
 </instance>
@@ -13497,7 +13497,7 @@ TS-003</description>
 <attribute name="NAME" x="137.16" y="57.912" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="C2" gate="G$1" x="22.86" y="93.98" smashed="yes">
-<attribute name="PARTN" x="22.86" y="93.98" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="93.98" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="23.876" y="94.615" size="1.778" layer="95"/>
 <attribute name="VALUE" x="23.876" y="89.789" size="1.778" layer="96"/>
 </instance>
@@ -13507,17 +13507,17 @@ TS-003</description>
 <attribute name="VALUE" x="31.496" y="110.109" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="139.7" y="180.34" smashed="yes">
-<attribute name="PARTN" x="139.7" y="180.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="139.7" y="180.34" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="140.716" y="180.975" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.716" y="176.149" size="1.778" layer="96"/>
 </instance>
 <instance part="C5" gate="G$1" x="25.4" y="190.5" smashed="yes">
-<attribute name="PARTN" x="25.4" y="190.5" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="25.4" y="190.5" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="26.416" y="191.135" size="1.778" layer="95"/>
 <attribute name="VALUE" x="26.416" y="186.309" size="1.778" layer="96"/>
 </instance>
 <instance part="C6" gate="G$1" x="76.2" y="190.5" smashed="yes">
-<attribute name="PARTN" x="76.2" y="190.5" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="76.2" y="190.5" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="77.216" y="191.135" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.216" y="186.309" size="1.778" layer="96"/>
 </instance>

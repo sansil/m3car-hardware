@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7986,10 +7986,10 @@ No silk outline, but tDocu layer shows pin location.
 <library name="holyiot">
 <packages>
 <package name="HOLYIOT">
-<wire x1="-6.75" y1="0" x2="-6.75" y2="18" width="0.127" layer="21"/>
-<wire x1="-6.75" y1="0" x2="6.75" y2="0" width="0.127" layer="21"/>
-<wire x1="6.75" y1="0" x2="6.75" y2="18" width="0.127" layer="21"/>
-<wire x1="6.75" y1="18" x2="-6.75" y2="18" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="0" x2="-6.75" y2="18" width="0.127" layer="51"/>
+<wire x1="-6.75" y1="0" x2="6.75" y2="0" width="0.127" layer="51"/>
+<wire x1="6.75" y1="0" x2="6.75" y2="18" width="0.127" layer="51"/>
+<wire x1="6.75" y1="18" x2="-6.75" y2="18" width="0.127" layer="51"/>
 <smd name="D+" x="-5.5" y="0" dx="0.8" dy="1.5" layer="1"/>
 <smd name="D-" x="-4.4" y="0" dx="0.8" dy="1.5" layer="1"/>
 <smd name="VBUS" x="-3.3" y="0" dx="0.8" dy="1.5" layer="1"/>
@@ -8029,6 +8029,8 @@ No silk outline, but tDocu layer shows pin location.
 <smd name="GND2" x="-6.75" y="14.7" dx="0.8" dy="1.5" layer="1" rot="R90"/>
 <rectangle x1="-6.75" y1="15.5" x2="6.75" y2="18" layer="41"/>
 <rectangle x1="-6.75" y1="15.5" x2="6.75" y2="18" layer="42"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="21">&gt;name</text>
+<text x="-2.54" y="3.81" size="1.27" layer="21">&gt;value</text>
 </package>
 </packages>
 <symbols>

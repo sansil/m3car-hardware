@@ -13579,14 +13579,8 @@ TS-003</description>
 <part name="U$2" library="holyiot" deviceset="HOLYIOT" device="">
 <attribute name="MPN" value="113990556"/>
 </part>
-<part name="U$3" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="10uf">
-<attribute name="MPN" value="GRM155R60J106ME44D"/>
-</part>
 <part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:6240564/1" value="100k">
 <attribute name="MPN" value="RC0402JR-07100KL"/>
-</part>
-<part name="U$4" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="CAPACITOR" device="_0402_M" package3d_urn="urn:adsk.eagle:package:2593733/1" value="0.01uf">
-<attribute name="MPN" value="CL05C100JB5NNNC"/>
 </part>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -13688,6 +13682,12 @@ TS-003</description>
 </part>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="C2" library="adafruit" deviceset="C-US" device="C0402" value="0.01uf">
+<attribute name="PARTN" value="CL05C100JB5NNNC"/>
+</part>
+<part name="C3" library="adafruit" deviceset="C-US" device="C0402" value="10uf">
+<attribute name="PARTN" value="GRM155R60G106ME44D"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -13720,20 +13720,10 @@ TS-003</description>
 <instance part="U$2" gate="G$1" x="193.04" y="127" smashed="yes">
 <attribute name="MPN" x="193.04" y="127" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="U$3" gate="C$1" x="30.48" y="114.3" smashed="yes">
-<attribute name="NAME" x="32.004" y="114.681" size="1.778" layer="95"/>
-<attribute name="VALUE" x="32.004" y="109.601" size="1.778" layer="96"/>
-<attribute name="MPN" x="30.48" y="114.3" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="R1" gate="G$1" x="93.98" y="167.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="92.4814" y="163.83" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="97.282" y="163.83" size="1.778" layer="96" rot="R90"/>
 <attribute name="MPN" x="93.98" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="U$4" gate="C$1" x="22.86" y="93.98" smashed="yes">
-<attribute name="NAME" x="24.384" y="94.361" size="1.778" layer="95"/>
-<attribute name="VALUE" x="24.384" y="89.281" size="1.778" layer="96"/>
-<attribute name="MPN" x="22.86" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND1" gate="1" x="43.18" y="73.66" smashed="yes">
 <attribute name="VALUE" x="40.64" y="71.12" size="1.778" layer="96"/>
@@ -13929,15 +13919,25 @@ TS-003</description>
 <attribute name="VALUE" x="27.94" y="101.6" size="1.778" layer="96"/>
 </instance>
 <instance part="J3" gate="J$1" x="134.62" y="63.5" rot="R180"/>
+<instance part="C2" gate="G$1" x="22.86" y="93.98" smashed="yes">
+<attribute name="PARTN" x="22.86" y="93.98" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="23.876" y="94.615" size="1.778" layer="95"/>
+<attribute name="VALUE" x="23.876" y="89.789" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="G$1" x="30.48" y="114.3" smashed="yes">
+<attribute name="PARTN" x="30.48" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="31.496" y="114.935" size="1.778" layer="95"/>
+<attribute name="VALUE" x="31.496" y="110.109" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$4" gate="C$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="22.86" y1="88.9" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VSS"/>
@@ -14046,9 +14046,9 @@ TS-003</description>
 <pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="C$1" pin="2"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="30.48" y1="109.22" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="J3" gate="J$1" pin="1"/>
@@ -14058,13 +14058,13 @@ TS-003</description>
 </net>
 <net name="VCC" class="2">
 <segment>
-<pinref part="U$4" gate="C$1" pin="1"/>
 <wire x1="22.86" y1="96.52" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="99.06" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <pinref part="U2" gate="G$1" pin="VCC"/>
 <wire x1="48.26" y1="99.06" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
 <junction x="22.86" y="99.06"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="TC2" gate="A" pin="6"/>
@@ -14465,12 +14465,12 @@ TS-003</description>
 <pinref part="U2" gate="G$1" pin="VM"/>
 <wire x1="48.26" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
 <label x="30.48" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$3" gate="C$1" pin="1"/>
 <wire x1="30.48" y1="116.84" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="119.38" x2="40.64" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="119.38" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="119.38" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
 <junction x="30.48" y="119.38"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="D6" gate="G$1" pin="C"/>

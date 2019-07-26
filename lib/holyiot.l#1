@@ -46,10 +46,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -74,10 +74,10 @@
 <library>
 <packages>
 <package name="HOLYIOT">
-<wire x1="-6.75" y1="0" x2="-6.75" y2="18" width="0.127" layer="51"/>
-<wire x1="-6.75" y1="0" x2="6.75" y2="0" width="0.127" layer="51"/>
-<wire x1="6.75" y1="0" x2="6.75" y2="18" width="0.127" layer="51"/>
-<wire x1="6.75" y1="18" x2="-6.75" y2="18" width="0.127" layer="51"/>
+<wire x1="-6.75" y1="0" x2="-6.75" y2="18" width="0.127" layer="20"/>
+<wire x1="-6.75" y1="0" x2="6.75" y2="0" width="0.127" layer="20"/>
+<wire x1="6.75" y1="0" x2="6.75" y2="18" width="0.127" layer="20"/>
+<wire x1="6.75" y1="18" x2="-6.75" y2="18" width="0.127" layer="20"/>
 <smd name="D+" x="-5.5" y="0" dx="0.8" dy="1.5" layer="1"/>
 <smd name="D-" x="-4.4" y="0" dx="0.8" dy="1.5" layer="1"/>
 <smd name="VBUS" x="-3.3" y="0" dx="0.8" dy="1.5" layer="1"/>
